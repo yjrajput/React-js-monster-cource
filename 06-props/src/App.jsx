@@ -1,6 +1,7 @@
 import React from 'react'
 import ParentToChild from './components/ParentToChild';
 import Products from './components/Products';
+import PassingjsxAsProps from './components/PassingjsxAsProps';
 
 const User = (props) =>{
     return(
@@ -38,6 +39,17 @@ const App = () => {
       </ParentToChild>
 
       <Products products = {products}/>
+
+      <PassingjsxAsProps
+      name = 'yuvraj singh rathore'
+      age = '22'
+      greeting = {
+        <h1>Hello world this is passing jsx as props</h1>
+      }
+      >
+        <p>Hobbies: learning, coding</p>
+        <button>About me</button>
+      </PassingjsxAsProps>
     </div>
   )
 }
