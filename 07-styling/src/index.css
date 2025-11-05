@@ -48,3 +48,10 @@ button{
   padding: 10px;
   background-color: #003A97;
 }
+
+.highRating{
+  background-color: #7CCE9C;
+}
+.lowRating{
+  background-color: #F6DC6D;
+}

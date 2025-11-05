@@ -1,6 +1,7 @@
 import {data} from './db/data'
 
 const App = () => {
+ 
   return (
     
         <div className='container'>
@@ -15,12 +16,12 @@ const App = () => {
 
                       <div className='content-box'>
                           <h1>Name: {items.title}</h1>
-                          <h3>rating: {items.rating}</h3>
+                          <h3>rating: <span style={{padding: '1px 6px', borderRadius: '30px'}} className={items.rating > 8 ? 'highRating' : 'lowRating'}>{items.rating}</span></h3>
                           <p>{items.description}</p>
                           <p>Genere: {items.genre}</p>
 
                           <div>
-                          <button>Watch now</button>
+                          <button className={items.rating > 8 ? 'highRating' : 'lowRating' }>Watch now</button>
                           </div>
                       </div>
                   </div>
