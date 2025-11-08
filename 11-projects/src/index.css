@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.on{
+    background-color: cornflowerblue;
+    transform: translateX(180px);
+    transition: all linear .3s;
+}
+.off{
+    background-color: green;
+    transition: all linear .3s;
+}
