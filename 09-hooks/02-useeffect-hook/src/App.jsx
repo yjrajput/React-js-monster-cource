@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Challenge from './components/Challenge';
 import CleanupFunction from './components/CleanupFunction';
 import FetchApi from './components/FetchApi';
+import AyscAwaitFecth from './components/AyscAwaitFecth';
 
 const App = () => {
   const [date, setdate] = useState('');
@@ -24,6 +25,8 @@ const App = () => {
       <CleanupFunction/>
       <hr />
       <FetchApi/>
+      <hr />
+      <AyscAwaitFecth/>
     </div>
   )
 }
