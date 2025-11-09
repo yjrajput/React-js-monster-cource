@@ -25,6 +25,7 @@ const App = () => {
       <Objects/>
       <hr />
       <DerivedState/>
+      <hr />
     </div>
   )
 }
