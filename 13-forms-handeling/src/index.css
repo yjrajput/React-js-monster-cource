@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  margin: 0 50px;
+}
+header h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+header p{
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+button{
+  background-color: #26BFF3;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+}
+.conditions{
+  font-size: 1rem;
+  color: gray;
+}
+.conditions span{
+  color: #26BFF3;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+input{
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 8px ;
+  background-color: rgba(128, 128, 128, 0.136);
+  color: white;
+  outline-color: #26BFF3;
+}
+
+@media (width < 550px) {
+    .form-container{
+      margin: 0 10px;
+    }
+}
