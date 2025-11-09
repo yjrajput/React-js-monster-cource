@@ -38,8 +38,8 @@ const Challenge = () => {
                 </form>
 
                 <div className='btn-container'>
-                    <button onClick={handleOnIncrement}>Increment</button>
-                    <button onClick={handleOnDecerment}>Decrement</button>
+                    <button onClick={handleOnIncrement} disabled = {count >= 100}>Increment</button>
+                    <button onClick={handleOnDecerment} disabled = {count <= 0}>Decrement</button>
                     <button onClick={handleOnReset}>Reset</button>
                 </div>
             </div>
