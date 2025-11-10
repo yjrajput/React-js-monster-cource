@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
-import { Data } from './ComponentsContext'
+import { UseCustomHook } from "./ComponentsContext"
 const ComponentA = () => {
-    const data = useContext(Data)
+    const data = UseCustomHook()
   return (
     <div>
         <h1>Hello i'm from component A my name is {data.name} and i'm {data.age} year old.</h1>

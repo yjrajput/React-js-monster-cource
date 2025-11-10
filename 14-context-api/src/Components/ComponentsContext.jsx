@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import { createContext } from 'react'
 
@@ -21,3 +21,9 @@ const ComponentsContext = ({children}) => {
 
 export default ComponentsContext;
 
+
+
+export const UseCustomHook = () =>{
+  const data = useContext(Data);
+  return data;
+}
