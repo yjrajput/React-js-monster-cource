@@ -13,3 +13,11 @@
     background-color: green;
     transition: all linear .3s;
 }
+.black{
+    background-color: #1F2936;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
