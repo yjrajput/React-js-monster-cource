@@ -1,0 +1,14 @@
+.first-class{
+  background-color: green;
+}
+.second-class{
+  background-color: brown;
+}
+button{
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  margin: 10px;
+
+}
