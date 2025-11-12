@@ -173,6 +173,12 @@ ul{
 .card-content p{
     font-size: 1.5rem;
 }
+.loading-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media (width < 900px) {
