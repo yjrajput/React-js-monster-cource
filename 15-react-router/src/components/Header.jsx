@@ -31,7 +31,7 @@ const Header = () => {
                 {
                     navMenu.map((navItems) =>(
                         <div className='nav-container' key={navItems.display}>
-                        <NavLink to={navItems.path}>{navItems.display}</NavLink>
+                        <NavLink className={({isActive}) => isActive ? 'active' : '' } to={navItems.path}>{navItems.display}</NavLink>
                         </div>
                     ))
                 }

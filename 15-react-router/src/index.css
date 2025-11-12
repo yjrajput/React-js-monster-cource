@@ -93,9 +93,42 @@ ul{
     font-size: 1.2rem;
     text-align: left;
 }
+.active{
+   color: rgb(73, 73, 220);
+  
+}
 
-
-
+.Error-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.error-container img{
+    max-width: 100%;
+  width: 800px;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.error-container button{
+    text-align: center;
+    border: none;
+    padding: 20px 100px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: brown;
+    cursor: pointer;
+    border-radius: 20px;
+}
 @media (width < 900px) {
     .container{
         padding: 0 ;
