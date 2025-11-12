@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Layout from './layout/Layout'
 import Errorpage from './pages/Errorpage'
+import { Apidata } from './db/Apidata'
 const App = () => {
     const router = createBrowserRouter([
       {
@@ -23,7 +24,8 @@ const App = () => {
       },
       {
         path: '/movies',
-        element: <Movies/>
+        element: <Movies/>,
+        loader: Apidata
       },
       {
         path: '/contact',
