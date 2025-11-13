@@ -1,9 +1,9 @@
-import React from 'react'
+
 import { useLoaderData } from 'react-router-dom'
 
 const Movies = () => {
   const moviesdata = useLoaderData()
-  console.log(moviesdata)
+
   return (
     <div className='container'>
         <div className='movies-card-container'>
