@@ -189,6 +189,58 @@ ul{
     background-color: #2A2C30;
 }
 
+
+
+.grid-container{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-container{
+    
+    margin-bottom: 2rem;
+}
+.header-container h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .8rem;
+    
+}
+.header-container p{
+    color: gray;
+    margin-bottom: 1rem;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.264);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+textarea{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.send-message-bnt{
+    border: none;
+    padding: 10px 50px;
+    font-size: 1rem;
+    color: white;
+    background-color: brown;
+
+}
 @media (width < 900px) {
     .container{
         padding: 0 ;
