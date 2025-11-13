@@ -1,5 +1,5 @@
 
-import { useLoaderData } from 'react-router-dom'
+import { NavLink, useLoaderData } from 'react-router-dom'
 
 const Movies = () => {
   const moviesdata = useLoaderData()
@@ -15,8 +15,9 @@ const Movies = () => {
                             <img src={items.Poster} alt="" />
                         </div>
                         <div className='card-content'>
-                        <h1>{items.Title}</h1>
-                        <p>{items.Year}</p>
+                        <NavLink to={`/movies/${items.imdbID}`}>
+                        <button className='watch-btn'>Watch Now</button>
+                        </NavLink>
                         </div>
                     </div>
                   ))

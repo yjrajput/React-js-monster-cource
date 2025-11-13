@@ -164,6 +164,7 @@ ul{
 }
 .movie-image img{
     width: 100%;
+    max-height: 400px;
     text-align: center;
 }
 .card-content h1{
@@ -179,7 +180,14 @@ ul{
     justify-content: center;
     align-items: center;
 }
-
+.watch-btn{
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    background-color: #2A2C30;
+}
 
 @media (width < 900px) {
     .container{

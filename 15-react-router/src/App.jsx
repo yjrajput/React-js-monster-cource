@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import Layout from './layout/Layout'
 import Errorpage from './pages/Errorpage'
 import { Apidata } from './db/Apidata'
+import MovieDetails from './pages/MovieDetails'
+import { Dynamicdata } from './db/Dynamicdata'
 const App = () => {
     const router = createBrowserRouter([
       {
@@ -26,6 +28,11 @@ const App = () => {
         path: '/movies',
         element: <Movies/>,
         loader: Apidata
+      },
+      {
+        path: '/movies/:movieID',
+        element: <MovieDetails/>,
+        loader: Dynamicdata
       },
       {
         path: '/contact',
