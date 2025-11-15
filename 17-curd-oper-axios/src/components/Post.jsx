@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getPost } from '../Services/APidata'
+import { deletePost, getPost } from '../Services/APidata'
 const Post = () => {
     const [data, setData] = useState([])
 
@@ -15,6 +15,12 @@ const Post = () => {
     useEffect(() =>{
         getApiData()
     }, [])
+
+
+    const handleOnDelete = async (index) =>{
+       const res = await deletePost(index);
+       console.log(res)
+    }
   return (
     
     <div className='container'>
@@ -35,7 +41,7 @@ const Post = () => {
 
                                 <div className='btn-container'>
                                     <button className='edit-btn'>Edit</button>
-                                    <button className='delete-btn'>Delete</button>
+                                    <button onClick={() => handleOnDelete(items.id)} className='delete-btn'>Delete</button>
                                 </div>
                             </div>
                         ))
