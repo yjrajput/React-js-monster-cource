@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "What is React?",
+    "answer": "React is a JavaScript library for building user interfaces, created by Facebook."
+  },
+  {
+    "id": 2,
+    "question": "What is a component?",
+    "answer": "A component is an independent, reusable piece of UI in a React application."
+  },
+  {
+    "id": 3,
+    "question": "What is useState?",
+    "answer": "useState is a React Hook that lets you add state to functional components."
+  },
+  {
+    "id": 4,
+    "question": "What is props?",
+    "answer": "Props are inputs to components that allow data to flow from parent to child."
+  }
+]
