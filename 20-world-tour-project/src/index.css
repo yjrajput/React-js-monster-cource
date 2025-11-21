@@ -243,3 +243,33 @@ input:focus{
   border-color: wheat;
 }
 /* contact section end  */
+
+
+
+/* footer section start  */
+
+.footer-section{
+  width: 100%;
+  background-color: #141414;
+  height: 5rem;
+}
+.footer-card{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.main-card{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.footer-icon{
+  font-size: 1.8rem;
+  color: #3543B3;
+}
+.footer-content h3{
+  font-size: 1.2rem;
+}
+/* footer section end  */
