@@ -200,3 +200,46 @@ nav ul{
   transform: scale(1.1);
 }
 /* fact section end  */
+
+
+/* contact section start  */
+
+.contact-container{
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.contact-heading{
+  margin-bottom: 3rem;
+}
+h3{
+  font-size: 2rem;
+  color: white;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 2rem;
+}
+input, textarea{
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: white;
+}
+input:focus{
+  border-color: wheat;
+}
+/* contact section end  */

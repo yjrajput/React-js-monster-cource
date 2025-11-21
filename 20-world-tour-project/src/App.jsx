@@ -3,7 +3,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/Home'
 import Country from './pages/Country'
 import About from './pages/About'
-import Contact from './pages/Contact'
+import Contact, { contactData } from './pages/Contact'
 import Layout from './layout/Layout'
 import Erroepage from './pages/Erroepage'
 const App = () => {
@@ -27,7 +27,8 @@ const App = () => {
     },
     {
       path: '/contact',
-      element: <Contact/>
+      element: <Contact/>,
+      action: contactData
     }
       ]
     }
