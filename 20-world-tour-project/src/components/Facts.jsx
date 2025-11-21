@@ -14,7 +14,7 @@ const Facts = () => {
 
             {
               country.map(({country,capital,population,interestingFact}) =>(
-                  <div className='card'>
+                  <div key={country} className='card'>
                     <h3>{country}</h3>
                     <p>Capital: <span>{capital}</span></p>
                     <p>Population: <span>{population}</span></p>
