@@ -1,3 +1,4 @@
+import Facts from "../components/Facts"
 
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
                 <img src='https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d29ybGR8ZW58MHx8MHx8fDA%3D' alt="world-image" />
             </div>
         </div>
+
+        <Facts/>
     </main>
   )
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "population": 331000000,
+    "interestingFact": "The U.S. has the world's largest economy."
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "population": 1420000000,
+    "interestingFact": "India is the world’s largest democracy."
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "population": 1410000000,
+    "interestingFact": "China is home to the Great Wall, visible from space under special conditions."
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "population": 125000000,
+    "interestingFact": "Japan consists of over 6,800 islands."
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "population": 83000000,
+    "interestingFact": "Germany is the world’s third-largest exporter."
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "population": 67000000,
+    "interestingFact": "London has the world’s oldest underground railway system."
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "population": 65000000,
+    "interestingFact": "France is the most visited country in the world."
+  },
+  {
+    "country": "Brazil",
+    "capital": "Brasília",
+    "population": 213000000,
+    "interestingFact": "Brazil has the Amazon rainforest, the largest tropical rainforest on Earth."
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "population": 38000000,
+    "interestingFact": "Canada has the longest coastline of any country."
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "population": 26000000,
+    "interestingFact": "Australia is home to unique animals like kangaroos and koalas."
+  }
+]
