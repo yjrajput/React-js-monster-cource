@@ -1,4 +1,4 @@
-import worldimage from '../../public/world-image-removebg-preview.png'
+
 
 const Home = () => {
   return (
