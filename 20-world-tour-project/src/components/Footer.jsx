@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             <div className='footer-content'>
               <h3>Call us</h3>
-              <p>7694814323</p>
+              <p>mobile: 7694814323</p>
             </div>
           </div>
 

@@ -211,6 +211,7 @@ nav ul{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4.7rem;
 
 
 }
@@ -251,7 +252,8 @@ input:focus{
 .footer-section{
   width: 100%;
   background-color: #141414;
-  height: 5rem;
+  padding: 1.5rem;
+  
 }
 .footer-card{
   height: 100%;
@@ -271,5 +273,18 @@ input:focus{
 }
 .footer-content h3{
   font-size: 1.2rem;
+}
+
+
+@media (width < 780px) {
+  .footer-card{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+    
+  }
+  .main-card{
+    align-self: self-start;
+  }
 }
 /* footer section end  */
