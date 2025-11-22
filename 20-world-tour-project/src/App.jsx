@@ -3,9 +3,9 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/Home'
 import Country from './pages/Country'
 import About from './pages/About'
-import Contact, { contactData } from './pages/Contact'
 import Layout from './layout/Layout'
 import Erroepage from './pages/Erroepage'
+import Contact from './pages/Contact'
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -27,8 +27,8 @@ const App = () => {
     },
     {
       path: '/contact',
-      element: <Contact/>,
-      action: contactData
+      element: <Contact/>
+      
     }
       ]
     }

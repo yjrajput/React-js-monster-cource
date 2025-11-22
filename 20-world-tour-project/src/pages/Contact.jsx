@@ -1,18 +1,23 @@
 import React from 'react'
-import { Form } from 'react-router-dom';
 
 
-export const contactData = async ({request}) =>{
-  try{
-      const res = await request.formData();
-      const data =  Object.fromEntries(res);
-      console.log(data)
-  }catch(error){
-    console.log(error)
-  }
+// export const contactData = async ({request}) =>{
+//   try{
+//       const res = await request.formData();
+//       const data =  Object.fromEntries(res);
+//       console.log(data)
+//   }catch(error){
+//     console.log(error)
+//   }
       
-}
+// }
+
 const Contact = () => {
+    const handleOnSubmit = (formdata) =>{
+        const formInputData = Object.fromEntries(formdata.entries());
+        console.log(formInputData)
+    }
+
   return (
     <div className='contact-section'>
       <div className='container contact-container'>
@@ -21,16 +26,16 @@ const Contact = () => {
           </div>
 
           
-              <Form method='POST' action='/contact'>
+              <form  action={handleOnSubmit}>
                 <input name='name' id='name' type="text" placeholder='Enter your name' />
                 <input name='email' id='email' type="mail" placeholder='Enter your mail' />
 
                 <textarea name='message' id='message' rows={10} type='text'placeholder='Enter your message' />
 
                 <div className='btn-container'>
-                  <button>Submit</button>
+                  <button type='submit'>Submit</button>
                 </div>
-              </Form>
+              </form>
     
       </div>
     </div>
