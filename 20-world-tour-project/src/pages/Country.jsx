@@ -17,13 +17,32 @@ const Country = () => {
 
   return (
     <div className='country-section'>
+      
+       
         <div className='container country-container'>
+          
+          <div className='search-container-grid'>
+                <div className='input-search'>
+                    <input type="text" placeholder='Search'/>
+                </div>
+
+                <div className='compaire-container'>
+                  <button>Asc</button>
+                  <button>Dec</button>
+                </div>
+
+                <div className='drop-dwon-search'>
+                    <input type="text" />
+                </div>
+            </div>
+           
+          
             <div className='country-grid'>
                 
                   {
                     countrys.map((items, index) =>(
                       <div key={index} className='country-card'>
-                          <div className='image-container'>
+                          <div className='country-image-container'>
                               <img src={items.flags.png} alt="" />
                           </div>
 
