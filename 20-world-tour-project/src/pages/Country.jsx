@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useTransition } from 'react'
 import { getCountryData } from '../api/postApi'
 import Loader from '../components/Loader';
+import { NavLink } from 'react-router-dom';
 const Country = () => {
   const[isPending, startTransition] = useTransition();
   const[countrys, setCountrys] = useState([])
@@ -53,7 +54,10 @@ const Country = () => {
                               <p>Capital: <span>{items.capital}</span></p>
 
                               <div className='btn-container'>
-                                <button>Read More</button>
+                                <NavLink to={`/country/${items.name.common}`}>
+                                  <button>Read More</button>
+                                </NavLink>
+
                               </div>
                           </div>
                       </div>
