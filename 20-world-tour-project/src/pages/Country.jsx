@@ -4,25 +4,36 @@ import Loader from '../components/Loader';
 import { NavLink } from 'react-router-dom';
 const Country = () => {
   const[isPending, startTransition] = useTransition();
-  const[countrys, setCountrys] = useState([]);
+  const[countries, setCountries] = useState([]);
   const [search, setSearch] = useState('');
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState('all');
 
-
-  const filterCOuntrys = () =>{
-    
-  }
-
-  useEffect(()=>{
-    startTransition(async() =>{
-    const res =await getCountryData();
-    setCountrys(res.data);
-      window.scrollTo(0, 0);
-    })
-  }, [])
 
   
+  useEffect(() => {
+    startTransition(async () => {
+      try {
+        const res = await getCountryData();
+        setCountries(res.data);
 
+        window.scrollTo(0, 0);
+      } catch (error) {
+        console.log(error);
+      }
+    });
+  }, []);
+
+
+  const filterCountries = countries.filter((country) => {
+    const matchesSearch =
+      !search ||
+      country.name.common.toLowerCase().includes(search.toLowerCase());
+
+    const matchesRegion =
+      filter === "all" || country.region.toLowerCase() === filter.toLowerCase();
+
+    return matchesSearch && matchesRegion;
+  });
   if(isPending) return <Loader/>
 
   return (
@@ -42,12 +53,12 @@ const Country = () => {
                 </div>
 
                 <div className='drop-dwon-search'>
-                    <select >
+                    <select value={filter} onChange={(event) => setFilter(event.target.value)}>
                       <option value="all">All</option>
                       <option value="africa">Afarica</option>
                       <option value="asia">Asia</option>
                       <option value="europe">Europe</option>
-                      <option value="aearica">Aearica</option>
+                      <option value="americas">America</option>
                       <option value="oceania">Oceania</option>
                     </select>
                 </div>
@@ -57,7 +68,7 @@ const Country = () => {
             <div className='country-grid'>
                 
                   {
-                    countrys.map((items, index) =>(
+                    filterCountries.map((items, index) =>(
                       <div key={index} className='country-card'>
                           <div className='country-image-container'>
                               <img src={items.flags.png} alt="" />
