@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useTransition } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getCountryDetails } from '../api/postApi';
 import Loader from '../components/Loader';
 
@@ -7,7 +7,11 @@ const CountryDetails = () => {
   const [isPending, startTransition] = useTransition();
   const [country, setCountry] = useState(null);
   const params = useParams();
+  const navigate = useNavigate();
 
+  const handleOnback = () =>{
+    navigate(-1)
+  }
   useEffect(() => {
     startTransition(async () => {
       try {
@@ -40,6 +44,7 @@ const CountryDetails = () => {
   return (
     <div className='country-details-section'>
       <div className='container'>
+        <h1 style={{padding: '0 2rem'}}>Country Details</h1>
         <div className='country-details-card'>
 
           {/* FLAG */}
@@ -63,6 +68,10 @@ const CountryDetails = () => {
             <p>Currencies: <span>{currency}</span></p>
           </div>
 
+        </div>
+
+        <div className='go-back'>
+          <button onClick={handleOnback}>Go Back</button>
         </div>
       </div>
     </div>
