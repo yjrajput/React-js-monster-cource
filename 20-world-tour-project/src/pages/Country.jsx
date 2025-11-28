@@ -34,6 +34,17 @@ const Country = () => {
 
     return matchesSearch && matchesRegion;
   });
+
+ const sortCountries = (order) => {
+  const sorted = [...countries].sort((a, b) => {
+    return order === "asc"
+      ? a.name.common.localeCompare(b.name.common)
+      : b.name.common.localeCompare(a.name.common);
+  });
+
+  setCountries(sorted);
+};
+
   if(isPending) return <Loader/>
 
   return (
@@ -48,8 +59,8 @@ const Country = () => {
                 </div>
 
                 <div className='compaire-container'>
-                  <button>Asc</button>
-                  <button>Dec</button>
+                  <button onClick={() => sortCountries('asc')}>Asc</button>
+                  <button onClick={() => sortCountries('dec')}>Dec</button>
                 </div>
 
                 <div className='drop-dwon-search'>
