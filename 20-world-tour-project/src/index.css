@@ -380,15 +380,33 @@ input:focus{
 .drop-dwon-search{
   width: 100%;
 }
-.drop-dwon-search input{
-  width: 100%;
+.drop-dwon-search select{
+  float: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: gray;
+  border: 1px solid gray;
 }
+
 
 .input-search{
   width: 100%;
 }
 .input-search input{
   width: 100%;
+}
+
+@media (width < 900px) {
+  .drop-dwon-search select{
+    width: 100%;
+  }
+  .search-container-grid{
+    gap: 2rem;
+  }
 }
 /* country section end  */
 
@@ -427,6 +445,7 @@ input:focus{
 .country-details-image img{
   width: 100%;
 }
+
 @media (width < 900px) {
   .country-details-card{
     grid-template-columns: 1fr;

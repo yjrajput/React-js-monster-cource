@@ -4,7 +4,14 @@ import Loader from '../components/Loader';
 import { NavLink } from 'react-router-dom';
 const Country = () => {
   const[isPending, startTransition] = useTransition();
-  const[countrys, setCountrys] = useState([])
+  const[countrys, setCountrys] = useState([]);
+  const [search, setSearch] = useState('');
+  const [filter, setFilter] = useState('');
+
+
+  const filterCOuntrys = () =>{
+    
+  }
 
   useEffect(()=>{
     startTransition(async() =>{
@@ -26,7 +33,7 @@ const Country = () => {
           
           <div className='search-container-grid'>
                 <div className='input-search'>
-                    <input type="text" placeholder='Search'/>
+                    <input type="text" placeholder='Search' value={search} onChange={(event) => setSearch(event.target.value)}/>
                 </div>
 
                 <div className='compaire-container'>
@@ -35,7 +42,14 @@ const Country = () => {
                 </div>
 
                 <div className='drop-dwon-search'>
-                    <input type="text" />
+                    <select >
+                      <option value="all">All</option>
+                      <option value="africa">Afarica</option>
+                      <option value="asia">Asia</option>
+                      <option value="europe">Europe</option>
+                      <option value="aearica">Aearica</option>
+                      <option value="oceania">Oceania</option>
+                    </select>
                 </div>
             </div>
            
