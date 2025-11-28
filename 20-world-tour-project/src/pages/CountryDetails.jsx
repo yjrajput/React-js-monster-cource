@@ -12,6 +12,7 @@ const CountryDetails = () => {
   const handleOnback = () =>{
     navigate(-1)
   }
+  
   useEffect(() => {
     startTransition(async () => {
       try {

@@ -10,9 +10,11 @@ const Country = () => {
     startTransition(async() =>{
     const res =await getCountryData();
     setCountrys(res.data);
-    console.log(countrys)
+      window.scrollTo(0, 0);
     })
   }, [])
+
+  
 
   if(isPending) return <Loader/>
 
